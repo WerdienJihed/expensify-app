@@ -1,9 +1,6 @@
-import { createStore, combineReducers } from "redux";
-import expensesReducer from "../reducers/expenses";
-import filtersReducer from "../reducers/filters";
-
-
-// Store creaction
+import { createStore, combineReducers } from 'redux';
+import expensesReducer from '../reducers/expenses';
+import filtersReducer from '../reducers/filters';
 
 export default () => {
     const store = createStore(
@@ -12,11 +9,7 @@ export default () => {
             filters: filtersReducer
         }),
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-
     );
 
     return store;
-}
-
-
-
+};
