@@ -62,9 +62,9 @@ export default class ExpenseForm extends React.Component {
                 <form onSubmit={this.onSubmit}>
                     <input
                         type="text"
-                        placeholder="Description"
+                        placeholder="description"
                         autoFocus
-                        value={this.state.Description}
+                        value={this.state.description}
                         onChange={this.onDescriptionChange}
                     />
                     <input
